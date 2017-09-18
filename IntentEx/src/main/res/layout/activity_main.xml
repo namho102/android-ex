@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="example.intentex.MainActivity">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/numB"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:background="#e74c3c"
+        android:onClick="onClickButton"
+        android:text="Ket Qua"
+        android:textColor="#Fff"
+        tools:layout_editor_absoluteX="141dp"
+        tools:layout_editor_absoluteY="167dp" />
+
+    <EditText
+        android:id="@+id/numB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberSigned"
+        android:layout_marginTop="27dp"
+        android:layout_below="@+id/numA"
+        android:layout_alignLeft="@+id/numA"
+        android:layout_alignStart="@+id/numA" />
+
+    <EditText
+        android:id="@+id/numA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberSigned"
+        android:layout_marginTop="18dp"
+        android:layout_marginRight="37dp"
+        android:layout_marginEnd="37dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentTop="false"
+        android:layout_centerHorizontal="false"
+        android:background="#2ecc71"
+        android:gravity="center"
+        android:text="Giai phuong trinh bac nhat"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/numA"
+        android:layout_marginEnd="11dp"
+        android:layout_marginRight="11dp"
+        android:layout_marginTop="10dp"
+        android:layout_toLeftOf="@+id/numA"
+        android:layout_toStartOf="@+id/numA"
+        android:text="Nhap so A:"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/numB"
+        android:layout_alignBottom="@+id/numB"
+        android:layout_alignEnd="@+id/textView2"
+        android:layout_alignRight="@+id/textView2"
+        android:text="Nhap so B:"
+        android:textSize="18sp" />
+
+</RelativeLayout>
